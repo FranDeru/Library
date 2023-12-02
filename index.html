@@ -12,8 +12,8 @@
     </div>
 
     <div class="main">
-        <div class="addBook">
-            <form method="get">
+        <dialog>
+            <form method="">
                 <div>
                     <label for="title">Title</label>
                     <input type="text" id="title" placeholder="Hunger Games..." required>
@@ -28,11 +28,12 @@
                 </div>
                 <div>
                     <label for="status">Already read ?</label>
-                    <input type="checkbox" name="status" id="status" required>
+                    <input type="checkbox" name="status" id="status">
                 </div>
-                <button>+ Add</button>
+                <button>Add</button>
             </form>
-        </div>
+        </dialog>
+        <button class="addButton">+ Add Book</button>
     </div>
 
     <script src="main.js"></script>

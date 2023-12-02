@@ -30,22 +30,18 @@ body {
     border-bottom: 3px solid var(--white-color);
 }
 
-.addBook {
-    border-bottom: 3px solid var(--white-color);
-    display: flex;
-    justify-content: center;
-    padding: 10px 0;
-}
-
-form {
-    display: flex;
-    flex-direction: column;
-}
-
-form > button {
+.addButton {
+    position: absolute;
+    right: 50px;
+    bottom: 60px;
+    border-radius: 50%;
+    border: 3px solid var(--white-color);
+    background: var(--dark-color);
+    color: var(--white-color);
+    width: 80px;
+    height: 80px;
+    font-size: 1.2rem;
     font-weight: bold;
-    width: 50%;
-    margin: 0 auto;
 }
 
 
