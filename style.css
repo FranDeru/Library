@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Hedvig+Letters+Serif:opsz@12..24&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --dark-color: rgb(20, 20, 38);
+    --white-color: #FFF;
+}
+
+html {
+    font-family: 'Hedvig Letters Serif', serif;
+}
+
+body {
+    font-size: 1.5rem;
+    background: var(--dark-color);
+    color: var(--white-color);
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    padding: 20px 0;
+    letter-spacing: 4px;
+    height: 20%;
+    border-bottom: 3px solid var(--white-color);
+}
+
+.addBook {
+    border-bottom: 3px solid var(--white-color);
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form > button {
+    font-weight: bold;
+    width: 50%;
+    margin: 0 auto;
+}
+
+

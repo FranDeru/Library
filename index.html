@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="header">
+        <h1>Library</h1>
+    </div>
+
+    <div class="main">
+        <div class="addBook">
+            <form method="get">
+                <div>
+                    <label for="title">Title</label>
+                    <input type="text" id="title" placeholder="Hunger Games..." required>
+                </div>
+                <div>
+                    <label for="author">Author</label>
+                    <input type="text" id="author" placeholder="S. Collins" required>
+                </div>
+                <div>
+                    <label for="pages">Pages</label>
+                    <input type="text" id="pages" placeholder="400" required>
+                </div>
+                <div>
+                    <label for="status">Already read ?</label>
+                    <input type="checkbox" name="status" id="status" required>
+                </div>
+                <button>+ Add</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
