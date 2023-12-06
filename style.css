@@ -1,47 +1,118 @@
 @import url('https://fonts.googleapis.com/css2?family=Hedvig+Letters+Serif:opsz@12..24&display=swap');
 
 * {
-    margin: 0;
-    padding: 0;
     box-sizing: border-box;
 }
 
 :root {
-    --dark-color: rgb(20, 20, 38);
+    --main-color: rgb(26, 26, 53);
+    --lighterblue-color: rgb(45, 45, 84);
     --white-color: #FFF;
+    --main-font:'Hedvig Letters Serif', serif;
 }
 
-html {
-    font-family: 'Hedvig Letters Serif', serif;
+html, body {
+    margin: 0;
+    padding: 0;
 }
 
-body {
-    font-size: 1.5rem;
-    background: var(--dark-color);
+body{
+    background: var(--main-color);
     color: var(--white-color);
+    font-family: var(--main-font);
 }
 
 .header {
-    display: flex;
-    justify-content: center;
-    padding: 20px 0;
-    letter-spacing: 4px;
-    height: 20%;
-    border-bottom: 3px solid var(--white-color);
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+    padding: 10px 20px;
+    margin-bottom: 50px;
+    border-bottom: 2px solid var(--white-color);
+    box-shadow: 4px 0px 4px var(--white-color);
 }
 
-.addButton {
+.header:nth-child(1) {
+    font-size: 1.5rem;
+}
+
+#new-book-btn {
     position: absolute;
-    right: 50px;
-    bottom: 60px;
+    top: 35px;
+    right: 100px;
     border-radius: 50%;
-    border: 3px solid var(--white-color);
-    background: var(--dark-color);
+    width: 70px;
+    height: 70px;
+    background: var(--main-color);
     color: var(--white-color);
-    width: 80px;
-    height: 80px;
-    font-size: 1.2rem;
-    font-weight: bold;
+    border: 2px solid var(--white-color);
 }
 
+#new-book-btn:hover {
+    scale: 1.1;
+    transition: 0.4s ease-in-out;
+}
 
+form {
+    display: grid;
+}
+
+#grid-book {
+    margin: 0 50px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 50px;
+    justify-items: center;
+}
+
+.bookCard {
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    border: 2px solid var(--white-color);
+    background: var(--lighterblue-color);
+    border-radius: 20px;
+    padding: 20px;
+    color: #FFF;
+    min-width: 300px;
+    min-height: 350px;
+}
+
+.green {
+    color: green;
+}
+
+.red {
+    color: red;
+}
+
+.option-btn {
+    display: flex;
+    justify-content: space-between;
+}
+
+.option-btn > button {
+    margin: 0 30px;
+}
+
+.remove-btn {
+    background: rgb(102, 24, 24);
+    color: var(--white-color);
+    border: none;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+}
+
+.remove-btn:hover {
+    scale: 1.3;
+    transition: 0.4s ease-in-out;
+}
+
+.toggle-btn {
+    background: rgb(102, 24, 24);
+    color: var(--white-color);
+    border: none;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+}

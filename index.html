@@ -8,33 +8,28 @@
 </head>
 <body>
     <div class="header">
-        <h1>Library</h1>
+        <div>
+            <h1>My Library</h1>
+        </div>
+        <div>
+            <button id="new-book-btn">New Book</button>
+            <dialog>
+                <form method="dialog" id="new-book-form">
+                    <label for="title">Title: </label>
+                    <input type="text" id="title" required>
+                    <label for="author">Auhtor: </label>
+                    <input type="text" id="author" required>
+                    <label for="pages">Pages: </label>
+                    <input type="text" id="pages" required>
+                    <label for="read">Read: </label>
+                    <input type="checkbox" id="read">
+                    <input type="submit" id="submitBtn">
+                </form>
+            </dialog>
+        </div>
     </div>
-
-    <div class="main">
-        <dialog>
-            <form method="">
-                <div>
-                    <label for="title">Title</label>
-                    <input type="text" id="title" placeholder="Hunger Games..." required>
-                </div>
-                <div>
-                    <label for="author">Author</label>
-                    <input type="text" id="author" placeholder="S. Collins" required>
-                </div>
-                <div>
-                    <label for="pages">Pages</label>
-                    <input type="text" id="pages" placeholder="400" required>
-                </div>
-                <div>
-                    <label for="status">Already read ?</label>
-                    <input type="checkbox" name="status" id="status">
-                </div>
-                <button>Add</button>
-            </form>
-        </dialog>
-        <button class="addButton">+ Add Book</button>
-    </div>
+    
+    <div id="grid-book"></div>
 
     <script src="main.js"></script>
 </body>
